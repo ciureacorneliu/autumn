@@ -1,0 +1,58 @@
+1. 
+    Method: GET
+    Path: /greet
+    Response message: "message": "Hello, World!"
+    Response status: 200
+
+2. 
+    method: post 
+    path: /items
+    body keys: id, value 
+    Response message: 
+        {
+            "item": {
+                "id": 700,
+                "value": "NOVEMBER"
+            },
+            "message": "Item created"
+        }
+    Response status: 201
+
+3. 
+    method: put 
+    path: /items/<id>
+    body keys: value 
+    Response message:
+        {
+            "item": {
+                "id": 700,
+                "value": "NOVEMBER"
+            },
+            "message": "Item updated"
+        }
+    Response status: 200
+
+4. 
+    method: delete
+    path: /items/<id> 
+    Response message:
+        {
+            "message": "Item deleted"
+        } 
+    Response status: 20
+
+5. 
+    method: patch
+    path: /items/<id>
+    body keys: value 
+    Response message:      
+        {
+            "item": {
+                "id": 500,
+                "value": "november"
+            },
+            "message": "Item partially updated"
+        }
+
+    Response status: 200
+
