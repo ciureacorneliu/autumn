@@ -4,3 +4,5 @@
 
 # Aceasta comanda se foloseste la pornirea aplicatiei din arhivul creat anterior 
     docker run -p 80:5000 training-api   
+    
+    Test commit 
